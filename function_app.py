@@ -12,8 +12,7 @@ def predict(req: func.HttpRequest) -> func.HttpResponse:
     monthly = req.params.get('monthly')
     techsupport = req.params.get('techsupport')
     
-    prediction =
-    make_prediction(
+    prediction = make_prediction(
         tenure=tenure,
         MonthlyCharges=monthly,
         TechSupport_yes=techsupport
